@@ -1,5 +1,5 @@
 import openai
-API_KEY = "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"
+API_KEY = "INSERT_API_KEY"
 
 
 openai.api_key = API_KEY
