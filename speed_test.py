@@ -19,14 +19,14 @@ window.title("Network Speed Monitor")
 
 # Create labels for download and upload speed
 download_label = tk.Label(window, text="Download Speed:")
-download_label.pack(pady=10)
+download_label.pack(pady=20, padx =50)
 
 upload_label = tk.Label(window, text="Upload Speed:")
-upload_label.pack(pady=10)
+upload_label.pack(pady=20, padx=50)
 
 # Create button to update speeds
 update_button = tk.Button(window, text="Update Speeds", command=update_speeds)
-update_button.pack(pady=10)
+update_button.pack(pady=20, padx = 50)
 
 # Update the speed labels once
 update_speeds()
