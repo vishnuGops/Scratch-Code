@@ -16,7 +16,7 @@ def main():
     num_threads = 10  # You can adjust this to test different levels of concurrency
 
     # The number of Fibonacci numbers to calculate
-    num_fibonacci = 35
+    num_fibonacci = 350
 
     # Split the task into equal chunks for each thread
     chunk_size = num_fibonacci // num_threads
@@ -38,7 +38,7 @@ def main():
 
     end_time = time.time()
     elapsed_time = end_time - start_time
-    print(f"Total time taken: {elapsed_time:.4f} seconds")
+    print("Total time taken: " ,elapsed_time)
 
 
 if __name__ == "__main__":
