@@ -1,4 +1,5 @@
 import random
+import matplotlib.pyplot as plt
 
 
 def number_from_normal_curve(min_value, max_value, mu, sigma):
@@ -20,11 +21,21 @@ def number_from_normal_curve(min_value, max_value, mu, sigma):
             return round(number)
 
 
-# Example usage
-min_value = 0
-max_value = 12
-mu = 6  # Mean of the normal distribution
+# Parameters
+min_value = 2
+max_value = 14
+mu = 8  # Mean of the normal distribution
 sigma = 2  # Standard deviation of the normal distribution
+num_samples = 100000
 
-random_number = number_from_normal_curve(min_value, max_value, mu, sigma)
-print("Random number from normal curve:", random_number)
+# Generate 100 numbers from the normal curve
+numbers = [number_from_normal_curve(
+    min_value, max_value, mu, sigma) for _ in range(num_samples)]
+
+# Plotting
+plt.hist(numbers, bins=50, density=True, alpha=0.6, color='g')
+plt.title('Histogram of Numbers from Normal Distribution')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.grid(True)
+plt.show()
