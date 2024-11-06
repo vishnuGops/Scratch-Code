@@ -7,9 +7,9 @@ qr = qrcode.QRCode(
     border=2,
 )
 
-qr.add_data('www.vishnugops.com')
+qr.add_data('https://www.amazon.com/registries/gl/guest-view/OBBLPU4BGXC1')
 qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
 
-img.save("Output/QRCodes/websiteQRCode1.png")
+img.save("Output/QRCodes/AmazonRegistry.png")
