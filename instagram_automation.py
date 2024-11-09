@@ -3,8 +3,8 @@ from instabot import Bot
 from requests.exceptions import HTTPError
 
 bot = Bot()
-bot.login(username="vish_you_were_there",
-          password="Messi2space!", use_cookie=True)
+bot.login(username="",
+          password="", use_cookie=True)
 
 try:
     bot.upload_photo(
