@@ -13,10 +13,12 @@ def fibonacci(n):
 
 def main():
     start_time = time.time()
+    print("Calculating Fibonacci numbers using multithreading...")
+    print("Start time: ", start_time)
     num_threads = 10  # You can adjust this to test different levels of concurrency
 
     # The number of Fibonacci numbers to calculate
-    num_fibonacci = 350
+    num_fibonacci = 10
 
     # Split the task into equal chunks for each thread
     chunk_size = num_fibonacci // num_threads
@@ -37,8 +39,9 @@ def main():
         thread.join()
 
     end_time = time.time()
+    print("End time: ", end_time)
     elapsed_time = end_time - start_time
-    print("Total time taken: " ,elapsed_time)
+    print("Total time taken: ", elapsed_time)
 
 
 if __name__ == "__main__":
