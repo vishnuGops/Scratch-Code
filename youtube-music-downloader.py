@@ -4,7 +4,7 @@ import yt_dlp
 
 def download_audio():
     # 1. Get the download folder from the user
-    output_folder = "C://Users//vishv//Desktop//Code//Scratch-Code//Output//Music".strip()
+    output_folder = "C://Users//vishv//Downloads//".strip()
 
     if not output_folder:
         output_folder = os.getcwd()
